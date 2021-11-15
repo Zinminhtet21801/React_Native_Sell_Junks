@@ -11,10 +11,8 @@ const styles = StyleSheet.create({
     height: 70,
   },
   loginScreenButton: {
-    width: "90%",
+    width: "100%",
     height: 50,
-    marginRight: 40,
-    marginLeft: 40,
     marginBottom: 5,
     borderRadius: 30,
   },

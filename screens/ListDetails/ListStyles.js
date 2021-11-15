@@ -30,9 +30,11 @@ const styles = StyleSheet.create({
     },
     customers_container: {
       width: "100%",
-      padding: "4% 5% 0% 5%",
+      padding : 15,
+      backgroundColor : colors.white,
       flexDirection: "row",
-      flex: 1,
+      justifyContent : "center",
+      alignItems : "center"
     },
     customers_image: {
       width: 65,
@@ -42,6 +44,7 @@ const styles = StyleSheet.create({
     customer_text_container: {
       flex: 1,
       paddingLeft: 5,
+      justifyContent : "center"
     },
     customer_name: {
       fontWeight: "500",

@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { FlatList, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import colors from "../../config/colors";
 import ListItems from "./ListItems";
 import styles from "./ListStyles";
@@ -24,7 +24,7 @@ function ListDetailsScreen({navigation}) {
           <Text style={styles.title_text}>Red jacket for sale</Text>
           <Text style={styles.price_text}>$100</Text>
         </View>
-        <View style={{ width: "100%", marginVertical : 20 }}>
+        <View style={{ width: "100%"}}>
           {customers}
         </View>
       </ScrollView>

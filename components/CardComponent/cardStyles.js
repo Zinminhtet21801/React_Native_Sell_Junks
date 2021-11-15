@@ -38,11 +38,6 @@ const styles = StyleSheet.create({
       paddingLeft: "2%",
       paddingRight: "2%",
     },
-    title_text: {
-      fontSize: 18,
-      fontWeight: "500",
-      fontFamily : Platform.OS === "android" ? "Roboto" : "Avenir"
-    },
     price_text: {
       fontSize: 14,
       color: colors.secondary,

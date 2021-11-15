@@ -12,17 +12,17 @@ import {
   View,
 } from "react-native";
 import styles from "./cardStyles"
-
+import defaultStyles from "../../config/styles"
 function CardComponent({ title, subtitle, image, price, navigation }) {
   let dummyData = [];
   for (let i = 0; i < 10; i++) {
     dummyData.push(
       <TouchableOpacity style={styles.card} key={i} onPress={()=> navigation.navigate("Detail")} activeOpacity="0.8" >
-        <View>
-        <Image source={image} style={styles.image} />
+        <View style={{width : "100%", height : "100%"}}>
+        <Image source={image} style={styles.image} resizeMode="cover" />
         <View style={styles.text_container}>
-          <Text style={styles.title_text}>{title}</Text>
-          <Text style={styles.price_text}>${price}</Text>
+          <Text style={defaultStyles.text}>{title}</Text>
+          <Text style={styles.price_text}>{subtitle}</Text>
         </View>
         </View>
       </TouchableOpacity>
